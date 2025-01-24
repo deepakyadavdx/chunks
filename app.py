@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify
+# from flask import Flask, request, render_template, jsonify
 import os
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
@@ -19,7 +19,7 @@ docs_list = [item for sublist in docs for item in sublist]
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    # return render_template('index.html')
 
 @app.route('/process', methods=['POST'])
 def process_file():
